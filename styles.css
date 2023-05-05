@@ -11,6 +11,7 @@
 }
 
 body {
+    overflow-y: auto;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -160,4 +161,104 @@ h1 {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+/* continue with media query */
+
+@media (max-width: 650px) {
+    body {
+        background-image: url("./images/bg-pattern-bottom-mobile.svg"), url("./images/bg-pattern-top-mobile.svg");
+        height: 200vh;
+    }
+
+    .wrapper {
+        width: 330px;
+        height: auto;
+    }
+
+    .body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-row {
+        flex-direction: column;
+        /* justify-content: space-between; */
+    }
+    
+    .text-block {
+        width: 100%;
+        text-align: center;
+    }
+    
+    h1 {
+        margin-top: 50px;
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+    
+    .text-block p {
+        line-height: 1.3em;
+        font-size: 18px;
+        margin-top: 2.2em;
+    }
+    
+    .stars-block {
+        margin-top: 25px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .stars-row {
+        width: 100%;
+        align-items: center;
+        padding: 1em 0;
+        flex-direction: column;
+        margin-bottom: 0.5em;
+    }
+    
+    #guru {
+        margin-right: 0;
+    }
+    
+    #reviews {
+        margin-right: 0;
+    }
+    
+    .five-stars {
+        margin-bottom: 0.65em;
+    }
+
+    .bottom-row {
+        flex-direction: column;
+        height: auto;
+        top: 100%;
+        margin-top: 35px;
+    }
+    
+    .card {
+        height: 220px;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    
+    #irene {
+        margin-top: 0;
+    }
+    
+    #anne {
+        margin-top: 0;
+    }
+    
+    .profile{
+        margin-bottom: 20px;
+    }
+
+    .comment {
+        line-height: 1.2em;
+    }
+    
+    .attribution {
+        display: none;
+    }
 }
